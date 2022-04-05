@@ -24,6 +24,11 @@ You may want to try this keymap out if some of the following features are import
 <li>No conflicts with system shortcuts</li>
 <li>No conflicts on non-English Latin keyboards</li>
 </ul>
+
+<p>
+Learn more about
+<a href="https://github.com/dmimat/double-chord-keymap/tree/master#readme">specific key mappings</a>
+</p>
   ]]></description>
     <depends>com.intellij.modules.lang</depends>
     <extensions defaultExtensionNs="com.intellij">
