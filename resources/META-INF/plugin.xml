@@ -9,7 +9,7 @@
 <p>
 A keymap for all IntelliJ-based IDEs where most shortcuts have two keystrokes:
 the first one defines a group and the second one defines an action in this group
-(e.g. <pre>Ctrl/Cmd+D, A</pre> for <b>Debug > Attach to Process</b> or
+(e.g. <code>Ctrl/Cmd+D, A</code> for <b>Debug > Attach to Process</b> or
 <code>Ctrl/Cmd+N, U</code> for <b>Navigate > Find Usages</b>).
 </p>
 
@@ -28,6 +28,7 @@ You may want to try this keymap out if some of the following features are import
 <p>
 Learn more about
 <a href="https://github.com/dmimat/double-chord-keymap/tree/master#readme">specific key mappings</a>
+in this keymap
 </p>
   ]]></description>
     <depends>com.intellij.modules.lang</depends>

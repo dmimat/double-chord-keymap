@@ -325,7 +325,7 @@
     <keyboard-shortcut first-keystroke="ctrl e" second-keystroke="ctrl d" />
     <mouse-shortcut keystroke="alt button2" />
   </action>
-  <action id="ShowErrorDescription">
+  <action id="EditorAddCaretPerSelectedLine">
     <keyboard-shortcut first-keystroke="ctrl e" second-keystroke="e" />
     <keyboard-shortcut first-keystroke="ctrl e" second-keystroke="ctrl e" />
   </action>
@@ -469,6 +469,10 @@
     <keyboard-shortcut first-keystroke="ctrl i" second-keystroke="c" />
     <keyboard-shortcut first-keystroke="ctrl i" second-keystroke="ctrl c" />
   </action>
+  <action id="ShowErrorDescription">
+    <keyboard-shortcut first-keystroke="ctrl i" second-keystroke="e" />
+    <keyboard-shortcut first-keystroke="ctrl i" second-keystroke="ctrl e" />
+  </action>
   <action id="TypeHierarchy">
     <keyboard-shortcut first-keystroke="ctrl i" second-keystroke="h" />
     <keyboard-shortcut first-keystroke="ctrl i" second-keystroke="ctrl h" />
@@ -603,8 +607,8 @@
     <keyboard-shortcut first-keystroke="ctrl l" second-keystroke="ctrl d" />
   </action>
   <action id="GotoLine">
-    <keyboard-shortcut first-keystroke="ctrl l" second-keystroke="f" />
-    <keyboard-shortcut first-keystroke="ctrl l" second-keystroke="ctrl f" />
+    <keyboard-shortcut first-keystroke="ctrl l" second-keystroke="g" />
+    <keyboard-shortcut first-keystroke="ctrl l" second-keystroke="ctrl g" />
   </action>
   <action id="AutoIndentLines">
     <keyboard-shortcut first-keystroke="ctrl l" second-keystroke="i" />
@@ -677,6 +681,10 @@
     <keyboard-shortcut first-keystroke="ctrl n" second-keystroke="m" />
     <keyboard-shortcut first-keystroke="ctrl n" second-keystroke="ctrl m" />
   </action>
+  <action id="ReSharperNavigateTo">
+    <keyboard-shortcut first-keystroke="ctrl n" second-keystroke="n" />
+    <keyboard-shortcut first-keystroke="ctrl n" second-keystroke="ctrl n" />
+  </action>
   <action id="GotoFile">
     <keyboard-shortcut first-keystroke="ctrl n" second-keystroke="o" />
     <keyboard-shortcut first-keystroke="ctrl n" second-keystroke="ctrl o" />
@@ -694,7 +702,7 @@
     <keyboard-shortcut first-keystroke="ctrl n" second-keystroke="s" />
     <keyboard-shortcut first-keystroke="ctrl n" second-keystroke="ctrl s" />
   </action>
-  <action id="ReSharperNavigateTo">
+  <action id="TextSearchAction">
     <keyboard-shortcut first-keystroke="ctrl n" second-keystroke="t" />
     <keyboard-shortcut first-keystroke="ctrl n" second-keystroke="ctrl t" />
   </action>
@@ -748,6 +756,10 @@
     <keyboard-shortcut first-keystroke="ctrl p" second-keystroke="o" />
     <keyboard-shortcut first-keystroke="ctrl p" second-keystroke="ctrl o" />
   </action>
+  <action id="OpenFile">
+    <keyboard-shortcut first-keystroke="ctrl p" second-keystroke="o" />
+    <keyboard-shortcut first-keystroke="ctrl p" second-keystroke="ctrl o" />
+  </action>
   <action id="Compile">
     <keyboard-shortcut first-keystroke="ctrl p" second-keystroke="r" />
     <keyboard-shortcut first-keystroke="ctrl p" second-keystroke="ctrl r" />
@@ -760,6 +772,10 @@
     <keyboard-shortcut first-keystroke="ctrl p" second-keystroke="s" />
     <keyboard-shortcut first-keystroke="ctrl p" second-keystroke="ctrl s" />
   </action>
+  <action id="CSharpInteractive">
+    <keyboard-shortcut first-keystroke="ctrl p" second-keystroke="t" />
+    <keyboard-shortcut efirst-keystroke="ctrl p" second-keystroke="ctrl t" />
+  </action>
   <action id="Synchronize">
     <keyboard-shortcut first-keystroke="ctrl p" second-keystroke="u" />
     <keyboard-shortcut first-keystroke="ctrl p" second-keystroke="ctrl u" />
@@ -767,10 +783,6 @@
   <action id="CancelBuildAction">
     <keyboard-shortcut first-keystroke="ctrl p" second-keystroke="x" />
     <keyboard-shortcut first-keystroke="ctrl p" second-keystroke="ctrl x" />
-  </action>
-  <action id="CSharpInteractive">
-    <keyboard-shortcut first-keystroke="shift p" second-keystroke="t" />
-    <keyboard-shortcut first-keystroke="shift p" second-keystroke="ctrl t" />
   </action>
 
   <!--Ctrl+R (Refactor. Actions that apply bulk transformations):-->
@@ -830,13 +842,13 @@
     <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="q" />
     <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="ctrl q" />
   </action>
-  <action id="ChangeSignature">
-    <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="s" />
-    <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="ctrl s" />
-  </action>
   <action id="RenameElement">
     <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="r" />
     <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="ctrl r" />
+  </action>
+  <action id="ChangeSignature">
+    <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="s" />
+    <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="ctrl s" />
   </action>
   <action id="RiderBackendAction-ExtractClass">
     <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="t" />
@@ -897,6 +909,10 @@
     <keyboard-shortcut first-keystroke="ctrl t" second-keystroke="n" />
     <keyboard-shortcut first-keystroke="ctrl t" second-keystroke="ctrl n" />
   </action>
+  <action id="Android.ChooseProfileConfiguration">
+    <keyboard-shortcut first-keystroke="ctrl t" second-keystroke="p" />
+    <keyboard-shortcut first-keystroke="ctrl t" second-keystroke="ctrl p" />
+  </action>
   <action id="RiderUnitTestProfileContextAction">
     <keyboard-shortcut first-keystroke="ctrl t" second-keystroke="p" />
     <keyboard-shortcut first-keystroke="ctrl t" second-keystroke="ctrl p" />
@@ -939,13 +955,13 @@
     <keyboard-shortcut first-keystroke="ctrl u" second-keystroke="h" />
     <keyboard-shortcut first-keystroke="ctrl u" second-keystroke="ctrl h" />
   </action>
-  <action id="context.load">
-    <keyboard-shortcut first-keystroke="ctrl u" second-keystroke="l" />
-    <keyboard-shortcut first-keystroke="ctrl u" second-keystroke="ctrl l" />
-  </action>
   <action id="context.save">
     <keyboard-shortcut first-keystroke="ctrl u" second-keystroke="k" />
     <keyboard-shortcut first-keystroke="ctrl u" second-keystroke="ctrl k" />
+  </action>
+  <action id="context.load">
+    <keyboard-shortcut first-keystroke="ctrl u" second-keystroke="l" />
+    <keyboard-shortcut first-keystroke="ctrl u" second-keystroke="ctrl l" />
   </action>
   <action id="RestartIde">
     <keyboard-shortcut first-keystroke="ctrl u" second-keystroke="n" />
@@ -986,27 +1002,15 @@
   </action>
 
   <!--Ctrl+W (Window. Manipulations with tool windows)-->
-  <action id="TogglePresentationMode">
-    <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="1" />
-    <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="ctrl 1" />
-  </action>
-  <action id="ToggleDistractionFreeMode">
-    <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="2" />
-    <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="ctrl 2" />
-  </action>
-  <action id="ToggleFullScreen">
-    <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="3" />
-    <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="ctrl 3" />
-  </action>
-  <action id="ToggleZenMode">
-    <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="4" />
-    <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="ctrl 4" />
-  </action>
-  <action id="ActivateServicesToolWindow">
+  <action id="ActivateAntToolWindow">
     <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="a" />
     <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="ctrl a" />
   </action>
   <action id="ActivateBuildToolWindow">
+    <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="a" />
+    <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="ctrl a" />
+  </action>
+  <action id="ActivateBookmarksToolWindow">
     <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="b" />
     <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="ctrl b" />
   </action>
@@ -1026,7 +1030,7 @@
     <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="f" />
     <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="ctrl f" />
   </action>
-  <action id="ActivateVersionControlToolWindow">
+  <action id="ActivateGradleToolWindow">
     <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="g" />
     <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="ctrl g" />
   </action>
@@ -1042,13 +1046,25 @@
     <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="j" />
     <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="ctrl j" />
   </action>
-  <action id="ActivateEventLogToolWindow">
+  <action id="ActivateServicesToolWindow">
+    <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="k" />
+    <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="ctrl k" />
+  </action>
+  <action id="ActivateLearnToolWindow">
     <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="l" />
     <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="ctrl l" />
   </action>
-  <action id="ActivateBookmarksToolWindow">
+  <action id="ActivateProfilerToolWindow">
     <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="m" />
     <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="ctrl m" />
+  </action>
+  <action id="ActivateEventLogToolWindow">
+    <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="n" />
+    <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="ctrl n" />
+  </action>
+  <action id="ActivateNotificationsToolWindow">
+    <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="n" />
+    <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="ctrl n" />
   </action>
   <action id="MaximizeToolWindow">
     <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="o" />
@@ -1079,6 +1095,10 @@
     <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="u" />
     <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="ctrl u" />
   </action>
+  <action id="ActivateVersionControlToolWindow">
+    <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="v" />
+    <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="ctrl v" />
+  </action>
   <action id="HideAllWindows">
     <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="w" />
     <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="ctrl w" />
@@ -1095,6 +1115,22 @@
   <action id="JumpToLastWindow">
     <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="z" />
     <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="ctrl z" />
+  </action>
+  <action id="TogglePresentationMode">
+    <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="1" />
+    <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="ctrl 1" />
+  </action>
+  <action id="ToggleDistractionFreeMode">
+    <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="2" />
+    <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="ctrl 2" />
+  </action>
+  <action id="ToggleFullScreen">
+    <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="3" />
+    <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="ctrl 3" />
+  </action>
+  <action id="ToggleZenMode">
+    <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="4" />
+    <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="ctrl 4" />
   </action>
 
   <action id="com.jetbrains.rider.interactive.csi.SendToCSharpInteractive" />
