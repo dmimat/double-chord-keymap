@@ -331,7 +331,6 @@ Double-chord shortcuts:
 | `T`          | test           | **C# Interactive** (Rider)                  |
 | `U`          | update         | **Reload All from Disk**                    |
 | `X`          |                | **Cancel Build**                            |
-| `Z`          |                | **Recent Changes**                          |
 
 <a id="r"></a>
 ### First chord: Ctrl/Cmd+R (refactor) - bulk transformations
