@@ -39,9 +39,9 @@ Double-chord shortcuts:
 
 > **NOTE:**  Availability of the actions listed below depends on your IDE and installed plugins
 
-##Single-chord shortcuts
+## Single-chord shortcuts
 
-###Standard editor shortcuts
+### Standard editor shortcuts
 | Windows/Linux    | macOS   | Action         |
 |------------------|---------|----------------|
 | `Ctrl+A`         | `Cmd+A` | **Select All** |
@@ -53,7 +53,7 @@ Double-chord shortcuts:
 | `Ctrl+Y`         | `Cmd+Y` | **Redo** |
 | `Ctrl+Z`| `Cmd+Z` | **Undo** |
 
-###Standard macOS application shortcuts 
+### Standard macOS application shortcuts 
 |      |                                   |
 |--------------|-----------------------------------------|
 |`Cmd+H`| **Hide Front Application** | 
@@ -61,7 +61,7 @@ Double-chord shortcuts:
 |`Cmd+Q`| **Quit** |
 |`Cmd+,`| **Preferences** |
 
-###Shortcuts for sequential actions
+### Shortcuts for sequential actions
 | Windows/Linux        | macOS                | Action                                                       |
 |----------------------|----------------------|--------------------------------------------------------------|
 | `F1`                 | `F1`                 | **Back**                                                     |
