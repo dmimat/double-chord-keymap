@@ -32,6 +32,7 @@ Double-chord shortcuts:
 - [Ctrl/Cmd+L (line) - manipulate code lines](#l)
 - [Ctrl/Cmd+N (navigate) - multiple-destination navigation](#n)
 - [Ctrl/Cmd+P (project) - global project actions](#p)
+- [Ctrl/Cmd+O (other) - IDE-specific and plugin-specific actions](#o)
 - [Ctrl/Cmd+R (refactor) - bulk transformations](#r)
 - [Ctrl/Cmd+T (test) - testing actions](#t)
 - [Ctrl/Cmd+U (utilities) - global helper actions](#u)
@@ -324,8 +325,8 @@ Double-chord shortcuts:
 |--------------|----------|-------------------------------------------------------------|
 | `A`          | apply    | **Apply Code Changes / Hot Reload** (Android Studio, Rider) |
 | `D`          | device   | **Select Device** (Android Studio)                   |
-| `R`          | build    | **Apply Changes and Restart** (Android Studio)              |
 | `E`          | edit     | **Edit Property Value** (Android Studio, i18n)              |
+| `R`          | restart  | **Apply Changes and Restart** (Android Studio)              |
 
 <a id="p"></a>
 ### First chord: Ctrl/Cmd+P (project) - global project actions
