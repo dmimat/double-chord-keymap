@@ -1,4 +1,4 @@
-<keymap version="1" name="Double Chord Keymap OSX" parent="Mac OS X 10.5+">
+<keymap version="1" name="Mnemonic Keymap OSX" parent="Mac OS X 10.5+">
 
     <!--Actions that might be invoked sequentially have single-chord shortcuts:-->
 
@@ -178,6 +178,10 @@
     <action id="CommentByBlockComment">
         <keyboard-shortcut first-keystroke="meta b" second-keystroke="c"/>
         <keyboard-shortcut first-keystroke="meta b" second-keystroke="meta c"/>
+    </action>
+    <action id="CIDR.Lang.Cpp.GenerateDefinitions">
+        <keyboard-shortcut first-keystroke="meta b" second-keystroke="d"/>
+        <keyboard-shortcut first-keystroke="meta b" second-keystroke="meta d"/>
     </action>
     <action id="Generate">
         <keyboard-shortcut first-keystroke="meta b" second-keystroke="g"/>
@@ -480,6 +484,10 @@
     </action>
 
     <!--meta+I (Inspect. Code analysis, inspections, exploration)-->
+    <action id="InspectCode">
+        <keyboard-shortcut first-keystroke="meta i" second-keystroke="a"/>
+        <keyboard-shortcut first-keystroke="meta i" second-keystroke="meta a"/>
+    </action>
     <action id="CallHierarchy">
         <keyboard-shortcut first-keystroke="meta i" second-keystroke="c"/>
         <keyboard-shortcut first-keystroke="meta i" second-keystroke="meta c"/>
@@ -492,7 +500,7 @@
         <keyboard-shortcut first-keystroke="meta i" second-keystroke="h"/>
         <keyboard-shortcut first-keystroke="meta i" second-keystroke="meta h"/>
     </action>
-    <action id="InspectCode">
+    <action id="CIDR.Lang.ImportsHierarchy">
         <keyboard-shortcut first-keystroke="meta i" second-keystroke="i"/>
         <keyboard-shortcut first-keystroke="meta i" second-keystroke="meta i"/>
     </action>
@@ -740,6 +748,28 @@
     <action id="RecentChanges">
         <keyboard-shortcut first-keystroke="meta n" second-keystroke="z"/>
         <keyboard-shortcut first-keystroke="meta n" second-keystroke="meta z"/>
+    </action>
+
+    <!--meta+O (Other. IDE- and plugin-specific actions)-->
+    <action id="android.deploy.CodeSwap">
+        <keyboard-shortcut first-keystroke="meta o" second-keystroke="a" />
+        <keyboard-shortcut first-keystroke="meta o" second-keystroke="meta a" />
+    </action>
+    <action id="RiderDebuggerApplyEncChagnes">
+        <keyboard-shortcut first-keystroke="meta o" second-keystroke="a" />
+        <keyboard-shortcut first-keystroke="meta o" second-keystroke="meta a" />
+    </action>
+    <action id="DeviceAndSnapshotComboBox">
+        <keyboard-shortcut first-keystroke="meta o" second-keystroke="d" />
+        <keyboard-shortcut first-keystroke="meta o" second-keystroke="meta d" />
+    </action>
+    <action id="android.deploy.ApplyChanges">
+        <keyboard-shortcut first-keystroke="meta o" second-keystroke="r" />
+        <keyboard-shortcut first-keystroke="meta o" second-keystroke="meta r" />
+    </action>
+    <action id="EditPropertyValue">
+        <keyboard-shortcut first-keystroke="meta o" second-keystroke="e" />
+        <keyboard-shortcut first-keystroke="meta o" second-keystroke="meta e" />
     </action>
 
     <!--meta+P (Project. Global actions)-->

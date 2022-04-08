@@ -1,20 +1,22 @@
 <idea-plugin>
-    <name>Double Chord Keymap</name>
-    <id>com.intellij.plugins.doubleChordKeymap</id>
-    <version>213.0000</version>
-    <idea-version since-build="213.0000"/>
+    <name>Mnemonic Keymap</name>
+    <id>com.intellij.plugins.mnemonicKeymap</id>
+    <version>213.0</version>
+    <idea-version since-build="211.0000"/>
     <vendor>JetBrains</vendor>
     <category>Keymap</category>
     <description><![CDATA[
 <p>
 A keymap for all IntelliJ-based IDEs where most shortcuts have two keystrokes:
-the first one defines a group and the second one defines an action in this group
-(e.g. <code>Ctrl/Cmd+D, A</code> for <b>Debug > Attach to Process</b> or
-<code>Ctrl/Cmd+N, U</code> for <b>Navigate > Find Usages</b>).
+the first one defines an action group, and the second one defines an action in this group, for example:
 </p>
+<ul>
+<li><code>Ctrl/Cmd+D, A</code> : <b>Debug > Attach to Process</b></li>
+<li><code>Ctrl/Cmd+N, U</code> : <b>Navigate > Find Usages</b></li>
+</ul>
 
 <p>
-You may want to try this keymap out if some of the following features are important to you:
+You may want to try out this keymap if some of the following features are important to you:
 </p>
 
 <ul>
@@ -33,7 +35,7 @@ in this keymap
   ]]></description>
     <depends>com.intellij.modules.lang</depends>
     <extensions defaultExtensionNs="com.intellij">
-        <bundledKeymap file="Double Chord Keymap.xml"/>
-        <bundledKeymap file="Double Chord Keymap OSX.xml"/>
+        <bundledKeymap file="Mnemonic Keymap.xml"/>
+        <bundledKeymap file="Mnemonic Keymap OSX.xml"/>
     </extensions>
 </idea-plugin>

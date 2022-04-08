@@ -1,11 +1,11 @@
-# Double Chord Keymap
+# Mnemonic Keymap
 
 A keymap for all IntelliJ-based IDEs where most shortcuts have two keystrokes:
 the first one defines a group and the second one defines an action in this group
 (e.g. `Ctrl/Cmd+D, A` for **Debug > Attach to Process** or
 `Ctrl/Cmd+N, U` for **Navigate > Find Usages**).
 
-You may want to try this keymap out if some of the following features are important to you:
+You may want to try out this keymap if some of the following features are important to you:
 
 - Easy-to-remember mnemonic mappings
 - Same shortcuts across different operating systems
@@ -134,19 +134,20 @@ Double-chord shortcuts:
 <a id="b"></a>
 ### First chord: Ctrl/Cmd+B (block) - manipulate code blocks
 
-| Second Chord | Mnemonic | Action         |
-|-----------------|----------|----------------|
-|`A`|as|**Save as Template**|
-|`C`|comment|**Comment/Uncomment with Block Comment**|
-|`G`|generate|**Generate**|
-|`H`|history|**Paste from History**|
-|`I`|implement|**Implement Methods**|
-|`O`|override|**Override Methods**|
-| `P`             | paste    | **Paste as Plain Text** |
-|`R`| rearrange|**Rearrange**|
-|`S`|surround|**Surround With...**|
-|`T`|template|**Insert Live Template**|
-|`U`|unwrap|**Unwrap / Remove**|
+| Second Chord | Mnemonic    | Action                                   |
+|--------------|-------------|------------------------------------------|
+| `A`          | as          | **Save as Template**                     |
+| `C`          | comment     | **Comment/Uncomment with Block Comment** |
+| `D`          | definitions | **Generate Definitions**                 |
+| `G`          | generate    | **Generate**                             |
+| `H`          | history     | **Paste from History**                   |
+| `I`          | implement   | **Implement Methods**                    |
+| `O`          | override    | **Override Methods**                     |
+| `P`          | paste       | **Paste as Plain Text**                  |
+| `R`          | rearrange   | **Rearrange**                            |
+| `S`          | surround    | **Surround With...**                     |
+| `T`          | template    | **Insert Live Template**                 |
+| `U`          | unwrap      | **Unwrap / Remove**                      |
 
 
 <a id="d"></a>
@@ -225,16 +226,17 @@ Double-chord shortcuts:
 <a id="i"></a>
 ### First chord: Ctrl/Cmd+I (inspect) - code analysis actions
 
-| Second Chord | Mnemonic   | Action                           |
-|--------------|------------|----------------------------------|
-| `C`          | calls      | **Call Hierarchy**                     |
-| `E`          | error         | **Error Description**               |
-| `H`          | hierarchy  | **Type Hierarchy**                       |
-| `I`          | inspect    | **Inspect Code**           |
-| `M`          | method     | **Method Hierarchy** |
+| Second Chord | Mnemonic   | Action                     |
+|--------------|------------|----------------------------|
+| `A`          | analyze    | **Inspect Code**           |
+| `C`          | calls      | **Call Hierarchy**         |
+| `E`          | error      | **Error Description**      |
+| `H`          | hierarchy  | **Type Hierarchy**         |
+| `I`          | imports   | **Imports Hierarchy**           |
+| `M`          | method     | **Method Hierarchy**       |
 | `N`          | name       | **Run Inspection by Name** |
-| `S`          | stacktrace | **Analyze Stack Trace** |
-| `Y`          |            | **Inspect This**                 |
+| `S`          | stacktrace | **Analyze Stack Trace**    |
+| `Y`          |            | **Inspect This**           |
 
 <a id="j"></a>
 ### First chord: Ctrl/Cmd+J (jump) - single-destination navigation
@@ -314,6 +316,16 @@ Double-chord shortcuts:
 | `X`          | xtended        | **Find Usages Settings**                    |
 | `Y`          |                | **Search Everywhere**                       |
 | `Z`          |                | **Recent Changes**                          |
+
+<a id="o"></a>
+### First chord: Ctrl/Cmd+O (other) - IDE-specific and plugin-specific actions
+
+| Second Chord | Mnemonic | Action                                                      |
+|--------------|----------|-------------------------------------------------------------|
+| `A`          | apply    | **Apply Code Changes / Hot Reload** (Android Studio, Rider) |
+| `D`          | device   | **Select Device** (Android Studio)                   |
+| `R`          | build    | **Apply Changes and Restart** (Android Studio)              |
+| `E`          | edit     | **Edit Property Value** (Android Studio, i18n)              |
 
 <a id="p"></a>
 ### First chord: Ctrl/Cmd+P (project) - global project actions

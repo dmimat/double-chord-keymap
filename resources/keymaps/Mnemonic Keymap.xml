@@ -1,4 +1,4 @@
-<keymap version="1" name="Double Chord Keymap" parent="$default">
+<keymap version="1" name="Mnemonic Keymap" parent="$default">
 
     <!--Actions that might be invoked sequentially have single-chord shortcuts:-->
 
@@ -163,6 +163,10 @@
     <action id="CommentByBlockComment">
         <keyboard-shortcut first-keystroke="ctrl b" second-keystroke="c"/>
         <keyboard-shortcut first-keystroke="ctrl b" second-keystroke="ctrl c"/>
+    </action>
+    <action id="CIDR.Lang.Cpp.GenerateDefinitions">
+        <keyboard-shortcut first-keystroke="ctrl b" second-keystroke="d"/>
+        <keyboard-shortcut first-keystroke="ctrl b" second-keystroke="ctrl d"/>
     </action>
     <action id="Generate">
         <keyboard-shortcut first-keystroke="ctrl b" second-keystroke="g"/>
@@ -465,6 +469,10 @@
     </action>
 
     <!--Ctrl+I (Inspect. Code analysis, inspections, exploration)-->
+    <action id="InspectCode">
+        <keyboard-shortcut first-keystroke="ctrl i" second-keystroke="a"/>
+        <keyboard-shortcut first-keystroke="ctrl i" second-keystroke="ctrl a"/>
+    </action>
     <action id="CallHierarchy">
         <keyboard-shortcut first-keystroke="ctrl i" second-keystroke="c"/>
         <keyboard-shortcut first-keystroke="ctrl i" second-keystroke="ctrl c"/>
@@ -477,7 +485,7 @@
         <keyboard-shortcut first-keystroke="ctrl i" second-keystroke="h"/>
         <keyboard-shortcut first-keystroke="ctrl i" second-keystroke="ctrl h"/>
     </action>
-    <action id="InspectCode">
+    <action id="CIDR.Lang.ImportsHierarchy">
         <keyboard-shortcut first-keystroke="ctrl i" second-keystroke="i"/>
         <keyboard-shortcut first-keystroke="ctrl i" second-keystroke="ctrl i"/>
     </action>
@@ -727,6 +735,28 @@
         <keyboard-shortcut first-keystroke="ctrl n" second-keystroke="ctrl z"/>
     </action>
 
+    <!--Ctrl+O (Other. IDE- and plugin-specific actions)-->
+    <action id="android.deploy.CodeSwap">
+        <keyboard-shortcut first-keystroke="ctrl o" second-keystroke="a" />
+        <keyboard-shortcut first-keystroke="ctrl o" second-keystroke="ctrl a" />
+    </action>
+    <action id="RiderDebuggerApplyEncChagnes">
+        <keyboard-shortcut first-keystroke="ctrl o" second-keystroke="a" />
+        <keyboard-shortcut first-keystroke="ctrl o" second-keystroke="ctrl a" />
+    </action>
+    <action id="DeviceAndSnapshotComboBox">
+        <keyboard-shortcut first-keystroke="ctrl o" second-keystroke="d" />
+        <keyboard-shortcut first-keystroke="ctrl o" second-keystroke="ctrl d" />
+    </action>
+    <action id="android.deploy.ApplyChanges">
+        <keyboard-shortcut first-keystroke="ctrl o" second-keystroke="r" />
+        <keyboard-shortcut first-keystroke="ctrl o" second-keystroke="ctrl r" />
+    </action>
+    <action id="EditPropertyValue">
+        <keyboard-shortcut first-keystroke="ctrl o" second-keystroke="e" />
+        <keyboard-shortcut first-keystroke="ctrl o" second-keystroke="ctrl e" />
+    </action>
+
     <!--Ctrl+P (Project. Global actions)-->
     <action id="RunTargetAction">
         <keyboard-shortcut first-keystroke="ctrl p" second-keystroke="a"/>
@@ -774,7 +804,7 @@
     </action>
     <action id="CSharpInteractive">
         <keyboard-shortcut first-keystroke="ctrl p" second-keystroke="t"/>
-        <keyboard-shortcut efirst-keystroke="ctrl p" second-keystroke="ctrl t"/>
+        <keyboard-shortcut first-keystroke="ctrl p" second-keystroke="ctrl t"/>
     </action>
     <action id="Synchronize">
         <keyboard-shortcut first-keystroke="ctrl p" second-keystroke="u"/>
