@@ -160,6 +160,10 @@
         <keyboard-shortcut first-keystroke="ctrl b" second-keystroke="a"/>
         <keyboard-shortcut first-keystroke="ctrl b" second-keystroke="ctrl a"/>
     </action>
+    <action id="PasteMultiple">
+        <keyboard-shortcut first-keystroke="ctrl b" second-keystroke="b"/>
+        <keyboard-shortcut first-keystroke="ctrl b" second-keystroke="ctrl b"/>
+    </action>
     <action id="CommentByBlockComment">
         <keyboard-shortcut first-keystroke="ctrl b" second-keystroke="c"/>
         <keyboard-shortcut first-keystroke="ctrl b" second-keystroke="ctrl c"/>
@@ -172,10 +176,6 @@
         <keyboard-shortcut first-keystroke="ctrl b" second-keystroke="g"/>
         <keyboard-shortcut first-keystroke="ctrl b" second-keystroke="ctrl g"/>
         <keyboard-shortcut first-keystroke="alt insert"/>
-    </action>
-    <action id="PasteMultiple">
-        <keyboard-shortcut first-keystroke="ctrl b" second-keystroke="h"/>
-        <keyboard-shortcut first-keystroke="ctrl b" second-keystroke="ctrl h"/>
     </action>
     <action id="ImplementMethods">
         <keyboard-shortcut first-keystroke="ctrl b" second-keystroke="i"/>
@@ -236,10 +236,6 @@
         <keyboard-shortcut first-keystroke="ctrl d" second-keystroke="g"/>
         <keyboard-shortcut first-keystroke="ctrl d" second-keystroke="ctrl g"/>
     </action>
-    <action id="RunClass">
-        <keyboard-shortcut first-keystroke="ctrl d" second-keystroke="h"/>
-        <keyboard-shortcut first-keystroke="ctrl d" second-keystroke="ctrl h"/>
-    </action>
     <action id="NavigateToImmediateWindow">
         <keyboard-shortcut first-keystroke="ctrl d" second-keystroke="i"/>
         <keyboard-shortcut first-keystroke="ctrl d" second-keystroke="ctrl i"/>
@@ -267,11 +263,6 @@
     <action id="Pause">
         <keyboard-shortcut first-keystroke="ctrl d" second-keystroke="p"/>
         <keyboard-shortcut first-keystroke="ctrl d" second-keystroke="ctrl p"/>
-    </action>
-    <action id="QuickEvaluateExpression">
-        <keyboard-shortcut first-keystroke="ctrl d" second-keystroke="q"/>
-        <keyboard-shortcut first-keystroke="ctrl d" second-keystroke="ctrl q"/>
-        <mouse-shortcut keystroke="alt button1"/>
     </action>
     <action id="Run">
         <keyboard-shortcut first-keystroke="ctrl d" second-keystroke="r"/>
@@ -302,13 +293,22 @@
         <keyboard-shortcut first-keystroke="ctrl d" second-keystroke="x"/>
         <keyboard-shortcut first-keystroke="ctrl d" second-keystroke="ctrl x"/>
     </action>
-    <action id="ChooseRunConfiguration">
+    <action id="QuickEvaluateExpression">
         <keyboard-shortcut first-keystroke="ctrl d" second-keystroke="y"/>
         <keyboard-shortcut first-keystroke="ctrl d" second-keystroke="ctrl y"/>
+        <mouse-shortcut keystroke="alt button1"/>
+    </action>
+    <action id="ChooseRunConfiguration">
+        <keyboard-shortcut first-keystroke="ctrl d" second-keystroke="1"/>
+        <keyboard-shortcut first-keystroke="ctrl d" second-keystroke="ctrl 1"/>
     </action>
     <action id="ChooseDebugConfiguration">
-        <keyboard-shortcut first-keystroke="ctrl d" second-keystroke="z"/>
-        <keyboard-shortcut first-keystroke="ctrl d" second-keystroke="ctrl z"/>
+        <keyboard-shortcut first-keystroke="ctrl d" second-keystroke="2"/>
+        <keyboard-shortcut first-keystroke="ctrl d" second-keystroke="ctrl 2"/>
+    </action>
+    <action id="RunClass">
+        <keyboard-shortcut first-keystroke="ctrl d" second-keystroke="3"/>
+        <keyboard-shortcut first-keystroke="ctrl d" second-keystroke="ctrl 3"/>
     </action>
 
     <!--Ctrl+E (Editor. Editor actions)-->
@@ -337,13 +337,17 @@
         <keyboard-shortcut first-keystroke="ctrl e" second-keystroke="f"/>
         <keyboard-shortcut first-keystroke="ctrl e" second-keystroke="ctrl f"/>
     </action>
-    <action id="LocalHistory">
-        <keyboard-shortcut first-keystroke="ctrl e" second-keystroke="h"/>
-        <keyboard-shortcut first-keystroke="ctrl e" second-keystroke="ctrl h"/>
+    <action id="QuickImplementations">
+        <keyboard-shortcut first-keystroke="ctrl e" second-keystroke="i"/>
+        <keyboard-shortcut first-keystroke="ctrl e" second-keystroke="ctrl i"/>
     </action>
     <action id="org.intellij.plugins.markdown.ui.actions.styling.ToggleItalicAction">
         <keyboard-shortcut first-keystroke="ctrl e" second-keystroke="i"/>
         <keyboard-shortcut first-keystroke="ctrl e" second-keystroke="ctrl i"/>
+    </action>
+    <action id="CompareClipboardWithSelection">
+        <keyboard-shortcut first-keystroke="ctrl e" second-keystroke="j"/>
+        <keyboard-shortcut first-keystroke="ctrl e" second-keystroke="ctrl j"/>
     </action>
     <action id="org.intellij.plugins.markdown.ui.actions.styling.ToggleCodeSpanAction">
         <keyboard-shortcut first-keystroke="ctrl e" second-keystroke="k"/>
@@ -357,10 +361,6 @@
         <keyboard-shortcut first-keystroke="ctrl e" second-keystroke="l"/>
         <keyboard-shortcut first-keystroke="ctrl e" second-keystroke="ctrl l"/>
     </action>
-    <action id="CompareClipboardWithSelection">
-        <keyboard-shortcut first-keystroke="ctrl e" second-keystroke="m"/>
-        <keyboard-shortcut first-keystroke="ctrl e" second-keystroke="ctrl m"/>
-    </action>
     <action id="CompareTwoFiles">
         <keyboard-shortcut first-keystroke="ctrl e" second-keystroke="o"/>
         <keyboard-shortcut first-keystroke="ctrl e" second-keystroke="ctrl o"/>
@@ -372,10 +372,6 @@
     <action id="ParameterInfo">
         <keyboard-shortcut first-keystroke="ctrl e" second-keystroke="p"/>
         <keyboard-shortcut first-keystroke="ctrl e" second-keystroke="ctrl p"/>
-    </action>
-    <action id="QuickImplementations">
-        <keyboard-shortcut first-keystroke="ctrl e" second-keystroke="q"/>
-        <keyboard-shortcut first-keystroke="ctrl e" second-keystroke="ctrl q"/>
     </action>
     <action id="Replace">
         <keyboard-shortcut first-keystroke="ctrl e" second-keystroke="r"/>
@@ -481,17 +477,13 @@
         <keyboard-shortcut first-keystroke="ctrl i" second-keystroke="e"/>
         <keyboard-shortcut first-keystroke="ctrl i" second-keystroke="ctrl e"/>
     </action>
-    <action id="TypeHierarchy">
-        <keyboard-shortcut first-keystroke="ctrl i" second-keystroke="h"/>
-        <keyboard-shortcut first-keystroke="ctrl i" second-keystroke="ctrl h"/>
+    <action id="MethodHierarchy">
+        <keyboard-shortcut first-keystroke="ctrl i" second-keystroke="f"/>
+        <keyboard-shortcut first-keystroke="ctrl i" second-keystroke="ctrl f"/>
     </action>
     <action id="CIDR.Lang.ImportsHierarchy">
         <keyboard-shortcut first-keystroke="ctrl i" second-keystroke="i"/>
         <keyboard-shortcut first-keystroke="ctrl i" second-keystroke="ctrl i"/>
-    </action>
-    <action id="MethodHierarchy">
-        <keyboard-shortcut first-keystroke="ctrl i" second-keystroke="m"/>
-        <keyboard-shortcut first-keystroke="ctrl i" second-keystroke="ctrl m"/>
     </action>
     <action id="RunInspection">
         <keyboard-shortcut first-keystroke="ctrl i" second-keystroke="n"/>
@@ -501,12 +493,20 @@
         <keyboard-shortcut first-keystroke="ctrl i" second-keystroke="s"/>
         <keyboard-shortcut first-keystroke="ctrl i" second-keystroke="ctrl s"/>
     </action>
+    <action id="TypeHierarchy">
+        <keyboard-shortcut first-keystroke="ctrl i" second-keystroke="t"/>
+        <keyboard-shortcut first-keystroke="ctrl i" second-keystroke="ctrl t"/>
+    </action>
     <action id="InspectThis">
-        <keyboard-shortcut first-keystroke="ctrl i" second-keystroke="y"/>
-        <keyboard-shortcut first-keystroke="ctrl i" second-keystroke="ctrl y"/>
+        <keyboard-shortcut first-keystroke="ctrl i" second-keystroke="0"/>
+        <keyboard-shortcut first-keystroke="ctrl i" second-keystroke="ctrl 0"/>
     </action>
 
     <!--Ctrl+J (Jump, Navigation actions with single destination)-->
+    <action id="EditorMatchBrace">
+        <keyboard-shortcut first-keystroke="ctrl j" second-keystroke="a"/>
+        <keyboard-shortcut first-keystroke="ctrl j" second-keystroke="ctrl a"/>
+    </action>
     <action id="ShowNavBar">
         <keyboard-shortcut first-keystroke="ctrl j" second-keystroke="b"/>
         <keyboard-shortcut first-keystroke="ctrl j" second-keystroke="ctrl b"/>
@@ -531,17 +531,13 @@
         <keyboard-shortcut first-keystroke="ctrl j" second-keystroke="f"/>
         <keyboard-shortcut first-keystroke="ctrl j" second-keystroke="ctrl f"/>
     </action>
-    <action id="SwitchHeaderSource">
-        <keyboard-shortcut first-keystroke="ctrl j" second-keystroke="h"/>
-        <keyboard-shortcut first-keystroke="ctrl j" second-keystroke="ctrl h"/>
-    </action>
-    <action id="EditorMatchBrace">
-        <keyboard-shortcut first-keystroke="ctrl j" second-keystroke="m"/>
-        <keyboard-shortcut first-keystroke="ctrl j" second-keystroke="ctrl m"/>
-    </action>
     <action id="LocateInSolutionView">
         <keyboard-shortcut first-keystroke="ctrl j" second-keystroke="p"/>
         <keyboard-shortcut first-keystroke="ctrl j" second-keystroke="ctrl p"/>
+    </action>
+    <action id="SwitchHeaderSource">
+        <keyboard-shortcut first-keystroke="ctrl j" second-keystroke="r"/>
+        <keyboard-shortcut first-keystroke="ctrl j" second-keystroke="ctrl r"/>
     </action>
     <action id="Switcher">
         <keyboard-shortcut first-keystroke="ctrl j" second-keystroke="s"/>
@@ -554,8 +550,8 @@
         <keyboard-shortcut first-keystroke="ctrl j" second-keystroke="ctrl t"/>
     </action>
     <action id="SelectIn">
-        <keyboard-shortcut first-keystroke="ctrl j" second-keystroke="y"/>
-        <keyboard-shortcut first-keystroke="ctrl j" second-keystroke="ctrl y"/>
+        <keyboard-shortcut first-keystroke="ctrl j" second-keystroke="0"/>
+        <keyboard-shortcut first-keystroke="ctrl j" second-keystroke="ctrl 0"/>
         <keyboard-shortcut first-keystroke="alt f1"/>
     </action>
 
@@ -597,8 +593,8 @@
         <keyboard-shortcut first-keystroke="ctrl k" second-keystroke="ctrl u"/>
     </action>
     <action id="Vcs.QuickListPopupAction">
-        <keyboard-shortcut first-keystroke="ctrl k" second-keystroke="y"/>
-        <keyboard-shortcut first-keystroke="ctrl k" second-keystroke="ctrl y"/>
+        <keyboard-shortcut first-keystroke="ctrl k" second-keystroke="0"/>
+        <keyboard-shortcut first-keystroke="ctrl k" second-keystroke="ctrl 0"/>
     </action>
 
     <!--Ctrl+L (Line. Manipulations with code lines)-->
@@ -614,6 +610,10 @@
         <keyboard-shortcut first-keystroke="ctrl l" second-keystroke="d"/>
         <keyboard-shortcut first-keystroke="ctrl l" second-keystroke="ctrl d"/>
     </action>
+    <action id="ToggleBookmarkWithMnemonic">
+        <keyboard-shortcut first-keystroke="ctrl l" second-keystroke="f"/>
+        <keyboard-shortcut first-keystroke="ctrl l" second-keystroke="ctrl f"/>
+    </action>
     <action id="GotoLine">
         <keyboard-shortcut first-keystroke="ctrl l" second-keystroke="g"/>
         <keyboard-shortcut first-keystroke="ctrl l" second-keystroke="ctrl g"/>
@@ -625,10 +625,6 @@
     <action id="EditorJoinLines">
         <keyboard-shortcut first-keystroke="ctrl l" second-keystroke="j"/>
         <keyboard-shortcut first-keystroke="ctrl l" second-keystroke="ctrl j"/>
-    </action>
-    <action id="ToggleBookmarkWithMnemonic">
-        <keyboard-shortcut first-keystroke="ctrl l" second-keystroke="m"/>
-        <keyboard-shortcut first-keystroke="ctrl l" second-keystroke="ctrl m"/>
     </action>
     <action id="EditorToggleShowLineNumbers">
         <keyboard-shortcut first-keystroke="ctrl l" second-keystroke="n"/>
@@ -677,6 +673,10 @@
         <keyboard-shortcut first-keystroke="ctrl n" second-keystroke="ctrl i"/>
         <mouse-shortcut keystroke="control alt button1"/>
     </action>
+    <action id="FileStructurePopup">
+        <keyboard-shortcut first-keystroke="ctrl n" second-keystroke="j"/>
+        <keyboard-shortcut first-keystroke="ctrl n" second-keystroke="ctrl j"/>
+    </action>
     <action id="ReSharperGotoImplementation">
         <keyboard-shortcut first-keystroke="ctrl n" second-keystroke="k"/>
         <keyboard-shortcut first-keystroke="ctrl n" second-keystroke="ctrl k"/>
@@ -684,10 +684,6 @@
     <action id="ShowUsages">
         <keyboard-shortcut first-keystroke="ctrl n" second-keystroke="l"/>
         <keyboard-shortcut first-keystroke="ctrl n" second-keystroke="ctrl l"/>
-    </action>
-    <action id="FileStructurePopup">
-        <keyboard-shortcut first-keystroke="ctrl n" second-keystroke="m"/>
-        <keyboard-shortcut first-keystroke="ctrl n" second-keystroke="ctrl m"/>
     </action>
     <action id="ReSharperNavigateTo">
         <keyboard-shortcut first-keystroke="ctrl n" second-keystroke="n"/>
@@ -726,13 +722,13 @@
         <keyboard-shortcut first-keystroke="ctrl n" second-keystroke="x"/>
         <keyboard-shortcut first-keystroke="ctrl n" second-keystroke="ctrl x"/>
     </action>
-    <action id="SearchEverywhere">
-        <keyboard-shortcut first-keystroke="ctrl n" second-keystroke="y"/>
-        <keyboard-shortcut first-keystroke="ctrl n" second-keystroke="ctrl y"/>
-    </action>
     <action id="RecentChanges">
         <keyboard-shortcut first-keystroke="ctrl n" second-keystroke="z"/>
         <keyboard-shortcut first-keystroke="ctrl n" second-keystroke="ctrl z"/>
+    </action>
+    <action id="SearchEverywhere">
+        <keyboard-shortcut first-keystroke="ctrl n" second-keystroke="0"/>
+        <keyboard-shortcut first-keystroke="ctrl n" second-keystroke="ctrl 0"/>
     </action>
 
     <!--Ctrl+O (Other. IDE- and plugin-specific actions)-->
@@ -774,10 +770,6 @@
         <keyboard-shortcut first-keystroke="ctrl p" second-keystroke="c"/>
         <keyboard-shortcut first-keystroke="ctrl p" second-keystroke="ctrl c"/>
     </action>
-    <action id="CWMHostShowPopupAction">
-        <keyboard-shortcut first-keystroke="ctrl p" second-keystroke="m"/>
-        <keyboard-shortcut first-keystroke="ctrl p" second-keystroke="ctrl m"/>
-    </action>
     <action id="RiderNuGetQuickListPopupAction">
         <keyboard-shortcut first-keystroke="ctrl p" second-keystroke="n"/>
         <keyboard-shortcut first-keystroke="ctrl p" second-keystroke="ctrl n"/>
@@ -810,6 +802,10 @@
         <keyboard-shortcut first-keystroke="ctrl p" second-keystroke="u"/>
         <keyboard-shortcut first-keystroke="ctrl p" second-keystroke="ctrl u"/>
     </action>
+    <action id="CWMHostShowPopupAction">
+        <keyboard-shortcut first-keystroke="ctrl p" second-keystroke="w"/>
+        <keyboard-shortcut first-keystroke="ctrl p" second-keystroke="ctrl w"/>
+    </action>
     <action id="CancelBuildAction">
         <keyboard-shortcut first-keystroke="ctrl p" second-keystroke="x"/>
         <keyboard-shortcut first-keystroke="ctrl p" second-keystroke="ctrl x"/>
@@ -832,7 +828,7 @@
         <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="d"/>
         <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="ctrl d"/>
     </action>
-    <action id="MembersPullUp">
+    <action id="ExtractMethod">
         <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="e"/>
         <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="ctrl e"/>
     </action>
@@ -840,9 +836,9 @@
         <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="f"/>
         <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="ctrl f"/>
     </action>
-    <action id="MemberPushDown">
-        <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="h"/>
-        <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="ctrl h"/>
+    <action id="SilentCodeCleanup">
+        <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="g"/>
+        <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="ctrl g"/>
     </action>
     <action id="ExtractInterface">
         <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="i"/>
@@ -856,10 +852,6 @@
         <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="l"/>
         <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="ctrl l"/>
     </action>
-    <action id="ExtractMethod">
-        <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="m"/>
-        <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="ctrl m"/>
-    </action>
     <action id="OptimizeImports">
         <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="o"/>
         <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="ctrl o"/>
@@ -867,10 +859,6 @@
     <action id="IntroduceParameter">
         <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="p"/>
         <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="ctrl p"/>
-    </action>
-    <action id="SilentCodeCleanup">
-        <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="q"/>
-        <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="ctrl q"/>
     </action>
     <action id="RenameElement">
         <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="r"/>
@@ -901,9 +889,17 @@
         <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="ctrl x"/>
         <keyboard-shortcut first-keystroke="alt delete"/>
     </action>
-    <action id="Refactorings.QuickListPopupAction">
+    <action id="MembersPullUp">
         <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="y"/>
         <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="ctrl y"/>
+    </action>
+    <action id="MemberPushDown">
+        <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="z"/>
+        <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="ctrl z"/>
+    </action>
+    <action id="Refactorings.QuickListPopupAction">
+        <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="0"/>
+        <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="ctrl 0"/>
     </action>
 
     <!--Ctrl+T (Test. Product-specific testing features)-->
@@ -968,8 +964,8 @@
         <keyboard-shortcut first-keystroke="ctrl t" second-keystroke="ctrl x"/>
     </action>
     <action id="RiderUnitTestQuickListPopupAction">
-        <keyboard-shortcut first-keystroke="ctrl t" second-keystroke="y"/>
-        <keyboard-shortcut first-keystroke="ctrl t" second-keystroke="ctrl y"/>
+        <keyboard-shortcut first-keystroke="ctrl t" second-keystroke="0"/>
+        <keyboard-shortcut first-keystroke="ctrl t" second-keystroke="ctrl 0"/>
     </action>
 
     <!--Ctrl+U (Utilities)-->
@@ -981,9 +977,17 @@
         <keyboard-shortcut first-keystroke="ctrl u" second-keystroke="b"/>
         <keyboard-shortcut first-keystroke="ctrl u" second-keystroke="ctrl b"/>
     </action>
+    <action id="LocalHistory">
+        <keyboard-shortcut first-keystroke="ctrl e" second-keystroke="c"/>
+        <keyboard-shortcut first-keystroke="ctrl e" second-keystroke="ctrl c"/>
+    </action>
     <action id="ContextHelp">
-        <keyboard-shortcut first-keystroke="ctrl u" second-keystroke="h"/>
-        <keyboard-shortcut first-keystroke="ctrl u" second-keystroke="ctrl h"/>
+        <keyboard-shortcut first-keystroke="ctrl u" second-keystroke="d"/>
+        <keyboard-shortcut first-keystroke="ctrl u" second-keystroke="ctrl d"/>
+    </action>
+    <action id="HelpTopics">
+        <keyboard-shortcut first-keystroke="ctrl u" second-keystroke="g"/>
+        <keyboard-shortcut first-keystroke="ctrl u" second-keystroke="ctrl g"/>
     </action>
     <action id="context.save">
         <keyboard-shortcut first-keystroke="ctrl u" second-keystroke="k"/>
@@ -1021,10 +1025,6 @@
     <action id="context.clear">
         <keyboard-shortcut first-keystroke="ctrl u" second-keystroke="x"/>
         <keyboard-shortcut first-keystroke="ctrl u" second-keystroke="ctrl x"/>
-    </action>
-    <action id="HelpTopics">
-        <keyboard-shortcut first-keystroke="ctrl u" second-keystroke="y"/>
-        <keyboard-shortcut first-keystroke="ctrl u" second-keystroke="ctrl y"/>
     </action>
     <action id="tasks.close">
         <keyboard-shortcut first-keystroke="ctrl u" second-keystroke="z"/>
@@ -1064,10 +1064,6 @@
         <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="g"/>
         <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="ctrl g"/>
     </action>
-    <action id="ActivateHierarchyToolWindow">
-        <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="h"/>
-        <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="ctrl h"/>
-    </action>
     <action id="ActivateILViewerToolWindow">
         <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="i"/>
         <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="ctrl i"/>
@@ -1084,10 +1080,6 @@
         <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="l"/>
         <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="ctrl l"/>
     </action>
-    <action id="ActivateProfilerToolWindow">
-        <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="m"/>
-        <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="ctrl m"/>
-    </action>
     <action id="ActivateEventLogToolWindow">
         <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="n"/>
         <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="ctrl n"/>
@@ -1096,17 +1088,13 @@
         <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="n"/>
         <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="ctrl n"/>
     </action>
-    <action id="MaximizeToolWindow">
+    <action id="ActivateProfilerToolWindow">
         <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="o"/>
         <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="ctrl o"/>
     </action>
     <action id="ActivateProjectToolWindow">
         <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="p"/>
         <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="ctrl p"/>
-    </action>
-    <action id="ActivateDatabaseToolWindow">
-        <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="q"/>
-        <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="ctrl q"/>
     </action>
     <action id="ActivateRunToolWindow">
         <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="r"/>
@@ -1129,22 +1117,17 @@
         <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="v"/>
         <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="ctrl v"/>
     </action>
-    <action id="HideAllWindows">
-        <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="w"/>
-        <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="ctrl w"/>
-    </action>
-    <action id="HideActiveWindow">
+    <action id="ActivateDatabaseToolWindow">
         <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="x"/>
         <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="ctrl x"/>
-        <keyboard-shortcut first-keystroke="shift escape"/>
     </action>
     <action id="ActivateTODOToolWindow">
         <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="y"/>
         <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="ctrl y"/>
     </action>
-    <action id="JumpToLastWindow">
+    <action id="ActivateHierarchyToolWindow">
         <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="z"/>
-        <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="ctrl z"/>
+        <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="ctrl x"/>
     </action>
     <action id="TogglePresentationMode">
         <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="1"/>
@@ -1161,6 +1144,23 @@
     <action id="ToggleZenMode">
         <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="4"/>
         <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="ctrl 4"/>
+    </action>
+    <action id="HideActiveWindow">
+        <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="5"/>
+        <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="ctrl 5"/>
+        <keyboard-shortcut first-keystroke="shift escape"/>
+    </action>
+    <action id="HideAllWindows">
+        <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="6"/>
+        <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="ctrl 6"/>
+    </action>
+    <action id="MaximizeToolWindow">
+        <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="9"/>
+        <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="ctrl 9"/>
+    </action>
+    <action id="JumpToLastWindow">
+        <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="0"/>
+        <keyboard-shortcut first-keystroke="ctrl w" second-keystroke="ctrl 0"/>
     </action>
 
     <action id="com.jetbrains.rider.interactive.csi.SendToCSharpInteractive"/>

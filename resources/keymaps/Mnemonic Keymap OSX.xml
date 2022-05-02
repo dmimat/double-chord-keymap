@@ -131,16 +131,16 @@
         <keyboard-shortcut first-keystroke="alt down"/>
     </action>
     <action id="MoveElementLeft">
-        <keyboard-shortcut first-keystroke="shift alt left"/>
+        <keyboard-shortcut first-keystroke="shift ctrl left"/>
     </action>
     <action id="MoveElementRight">
-        <keyboard-shortcut first-keystroke="shift alt right"/>
+        <keyboard-shortcut first-keystroke="shift ctrl right"/>
     </action>
     <action id="MoveStatementDown">
-        <keyboard-shortcut first-keystroke="shift alt down"/>
+        <keyboard-shortcut first-keystroke="shift ctrl down"/>
     </action>
     <action id="MoveStatementUp">
-        <keyboard-shortcut first-keystroke="shift alt up"/>
+        <keyboard-shortcut first-keystroke="shift ctrl up"/>
     </action>
     <action id="NextOccurence">
         <keyboard-shortcut first-keystroke="shift meta down"/>
@@ -153,6 +153,12 @@
     </action>
     <action id="MethodOverloadSwitchDown">
         <keyboard-shortcut first-keystroke="meta down"/>
+    </action>
+    <action id="NextTab">
+        <keyboard-shortcut first-keystroke="meta alt right" />
+    </action>
+    <action id="PreviousTab">
+        <keyboard-shortcut first-keystroke="meta alt left" />
     </action>
 
     <!--Standard editor shortcuts are single-chord too-->
@@ -175,6 +181,10 @@
         <keyboard-shortcut first-keystroke="meta b" second-keystroke="a"/>
         <keyboard-shortcut first-keystroke="meta b" second-keystroke="meta a"/>
     </action>
+    <action id="PasteMultiple">
+        <keyboard-shortcut first-keystroke="meta b" second-keystroke="b"/>
+        <keyboard-shortcut first-keystroke="meta b" second-keystroke="meta b"/>
+    </action>
     <action id="CommentByBlockComment">
         <keyboard-shortcut first-keystroke="meta b" second-keystroke="c"/>
         <keyboard-shortcut first-keystroke="meta b" second-keystroke="meta c"/>
@@ -187,10 +197,6 @@
         <keyboard-shortcut first-keystroke="meta b" second-keystroke="g"/>
         <keyboard-shortcut first-keystroke="meta b" second-keystroke="meta g"/>
         <keyboard-shortcut first-keystroke="alt insert"/>
-    </action>
-    <action id="PasteMultiple">
-        <keyboard-shortcut first-keystroke="meta b" second-keystroke="h"/>
-        <keyboard-shortcut first-keystroke="meta b" second-keystroke="meta h"/>
     </action>
     <action id="ImplementMethods">
         <keyboard-shortcut first-keystroke="meta b" second-keystroke="i"/>
@@ -251,10 +257,6 @@
         <keyboard-shortcut first-keystroke="meta d" second-keystroke="g"/>
         <keyboard-shortcut first-keystroke="meta d" second-keystroke="meta g"/>
     </action>
-    <action id="RunClass">
-        <keyboard-shortcut first-keystroke="meta d" second-keystroke="h"/>
-        <keyboard-shortcut first-keystroke="meta d" second-keystroke="meta h"/>
-    </action>
     <action id="NavigateToImmediateWindow">
         <keyboard-shortcut first-keystroke="meta d" second-keystroke="i"/>
         <keyboard-shortcut first-keystroke="meta d" second-keystroke="meta i"/>
@@ -282,11 +284,6 @@
     <action id="Pause">
         <keyboard-shortcut first-keystroke="meta d" second-keystroke="p"/>
         <keyboard-shortcut first-keystroke="meta d" second-keystroke="meta p"/>
-    </action>
-    <action id="QuickEvaluateExpression">
-        <keyboard-shortcut first-keystroke="meta d" second-keystroke="q"/>
-        <keyboard-shortcut first-keystroke="meta d" second-keystroke="meta q"/>
-        <mouse-shortcut keystroke="alt button1"/>
     </action>
     <action id="Run">
         <keyboard-shortcut first-keystroke="meta d" second-keystroke="r"/>
@@ -317,13 +314,22 @@
         <keyboard-shortcut first-keystroke="meta d" second-keystroke="x"/>
         <keyboard-shortcut first-keystroke="meta d" second-keystroke="meta x"/>
     </action>
-    <action id="ChooseRunConfiguration">
+    <action id="QuickEvaluateExpression">
         <keyboard-shortcut first-keystroke="meta d" second-keystroke="y"/>
         <keyboard-shortcut first-keystroke="meta d" second-keystroke="meta y"/>
+        <mouse-shortcut keystroke="alt button1"/>
+    </action>
+    <action id="ChooseRunConfiguration">
+        <keyboard-shortcut first-keystroke="meta d" second-keystroke="1"/>
+        <keyboard-shortcut first-keystroke="meta d" second-keystroke="meta 1"/>
     </action>
     <action id="ChooseDebugConfiguration">
-        <keyboard-shortcut first-keystroke="meta d" second-keystroke="z"/>
-        <keyboard-shortcut first-keystroke="meta d" second-keystroke="meta z"/>
+        <keyboard-shortcut first-keystroke="meta d" second-keystroke="2"/>
+        <keyboard-shortcut first-keystroke="meta d" second-keystroke="meta 2"/>
+    </action>
+    <action id="RunClass">
+        <keyboard-shortcut first-keystroke="meta d" second-keystroke="3"/>
+        <keyboard-shortcut first-keystroke="meta d" second-keystroke="meta 3"/>
     </action>
 
     <!--meta+E (Editor. Editor actions)-->
@@ -352,13 +358,17 @@
         <keyboard-shortcut first-keystroke="meta e" second-keystroke="f"/>
         <keyboard-shortcut first-keystroke="meta e" second-keystroke="meta f"/>
     </action>
-    <action id="LocalHistory">
-        <keyboard-shortcut first-keystroke="meta e" second-keystroke="h"/>
-        <keyboard-shortcut first-keystroke="meta e" second-keystroke="meta h"/>
+    <action id="QuickImplementations">
+        <keyboard-shortcut first-keystroke="meta e" second-keystroke="i"/>
+        <keyboard-shortcut first-keystroke="meta e" second-keystroke="meta i"/>
     </action>
     <action id="org.intellij.plugins.markdown.ui.actions.styling.ToggleItalicAction">
         <keyboard-shortcut first-keystroke="meta e" second-keystroke="i"/>
         <keyboard-shortcut first-keystroke="meta e" second-keystroke="meta i"/>
+    </action>
+    <action id="CompareClipboardWithSelection">
+        <keyboard-shortcut first-keystroke="meta e" second-keystroke="j"/>
+        <keyboard-shortcut first-keystroke="meta e" second-keystroke="meta "/>
     </action>
     <action id="org.intellij.plugins.markdown.ui.actions.styling.ToggleCodeSpanAction">
         <keyboard-shortcut first-keystroke="meta e" second-keystroke="k"/>
@@ -372,10 +382,6 @@
         <keyboard-shortcut first-keystroke="meta e" second-keystroke="l"/>
         <keyboard-shortcut first-keystroke="meta e" second-keystroke="meta l"/>
     </action>
-    <action id="CompareClipboardWithSelection">
-        <keyboard-shortcut first-keystroke="meta e" second-keystroke="m"/>
-        <keyboard-shortcut first-keystroke="meta e" second-keystroke="meta m"/>
-    </action>
     <action id="CompareTwoFiles">
         <keyboard-shortcut first-keystroke="meta e" second-keystroke="o"/>
         <keyboard-shortcut first-keystroke="meta e" second-keystroke="meta o"/>
@@ -387,10 +393,6 @@
     <action id="ParameterInfo">
         <keyboard-shortcut first-keystroke="meta e" second-keystroke="p"/>
         <keyboard-shortcut first-keystroke="meta e" second-keystroke="meta p"/>
-    </action>
-    <action id="QuickImplementations">
-        <keyboard-shortcut first-keystroke="meta e" second-keystroke="q"/>
-        <keyboard-shortcut first-keystroke="meta e" second-keystroke="meta q"/>
     </action>
     <action id="Replace">
         <keyboard-shortcut first-keystroke="meta e" second-keystroke="r"/>
@@ -496,17 +498,13 @@
         <keyboard-shortcut first-keystroke="meta i" second-keystroke="d"/>
         <keyboard-shortcut first-keystroke="meta i" second-keystroke="meta d"/>
     </action>
-    <action id="TypeHierarchy">
-        <keyboard-shortcut first-keystroke="meta i" second-keystroke="h"/>
-        <keyboard-shortcut first-keystroke="meta i" second-keystroke="meta h"/>
+    <action id="MethodHierarchy">
+        <keyboard-shortcut first-keystroke="meta i" second-keystroke="f"/>
+        <keyboard-shortcut first-keystroke="meta i" second-keystroke="meta f"/>
     </action>
     <action id="CIDR.Lang.ImportsHierarchy">
         <keyboard-shortcut first-keystroke="meta i" second-keystroke="i"/>
         <keyboard-shortcut first-keystroke="meta i" second-keystroke="meta i"/>
-    </action>
-    <action id="MethodHierarchy">
-        <keyboard-shortcut first-keystroke="meta i" second-keystroke="m"/>
-        <keyboard-shortcut first-keystroke="meta i" second-keystroke="meta m"/>
     </action>
     <action id="RunInspection">
         <keyboard-shortcut first-keystroke="meta i" second-keystroke="n"/>
@@ -516,12 +514,20 @@
         <keyboard-shortcut first-keystroke="meta i" second-keystroke="s"/>
         <keyboard-shortcut first-keystroke="meta i" second-keystroke="meta s"/>
     </action>
+    <action id="TypeHierarchy">
+        <keyboard-shortcut first-keystroke="meta i" second-keystroke="t"/>
+        <keyboard-shortcut first-keystroke="meta i" second-keystroke="meta t"/>
+    </action>
     <action id="InspectThis">
-        <keyboard-shortcut first-keystroke="meta i" second-keystroke="y"/>
-        <keyboard-shortcut first-keystroke="meta i" second-keystroke="meta y"/>
+        <keyboard-shortcut first-keystroke="meta i" second-keystroke="0"/>
+        <keyboard-shortcut first-keystroke="meta i" second-keystroke="meta 0"/>
     </action>
 
     <!--meta+J (Jump, Navigation actions with single destination)-->
+    <action id="EditorMatchBrace">
+        <keyboard-shortcut first-keystroke="meta j" second-keystroke="a"/>
+        <keyboard-shortcut first-keystroke="meta j" second-keystroke="meta a"/>
+    </action>
     <action id="ShowNavBar">
         <keyboard-shortcut first-keystroke="meta j" second-keystroke="b"/>
         <keyboard-shortcut first-keystroke="meta j" second-keystroke="meta b"/>
@@ -546,17 +552,13 @@
         <keyboard-shortcut first-keystroke="meta j" second-keystroke="f"/>
         <keyboard-shortcut first-keystroke="meta j" second-keystroke="meta f"/>
     </action>
-    <action id="SwitchHeaderSource">
-        <keyboard-shortcut first-keystroke="meta j" second-keystroke="h"/>
-        <keyboard-shortcut first-keystroke="meta j" second-keystroke="meta h"/>
-    </action>
-    <action id="EditorMatchBrace">
-        <keyboard-shortcut first-keystroke="meta j" second-keystroke="m"/>
-        <keyboard-shortcut first-keystroke="meta j" second-keystroke="meta m"/>
-    </action>
     <action id="LocateInSolutionView">
         <keyboard-shortcut first-keystroke="meta j" second-keystroke="p"/>
         <keyboard-shortcut first-keystroke="meta j" second-keystroke="meta p"/>
+    </action>
+    <action id="SwitchHeaderSource">
+        <keyboard-shortcut first-keystroke="meta j" second-keystroke="r"/>
+        <keyboard-shortcut first-keystroke="meta j" second-keystroke="meta r"/>
     </action>
     <action id="Switcher">
         <keyboard-shortcut first-keystroke="meta j" second-keystroke="s"/>
@@ -569,8 +571,8 @@
         <keyboard-shortcut first-keystroke="meta j" second-keystroke="meta t"/>
     </action>
     <action id="SelectIn">
-        <keyboard-shortcut first-keystroke="meta j" second-keystroke="y"/>
-        <keyboard-shortcut first-keystroke="meta j" second-keystroke="meta y"/>
+        <keyboard-shortcut first-keystroke="meta j" second-keystroke="0"/>
+        <keyboard-shortcut first-keystroke="meta j" second-keystroke="meta 0"/>
         <keyboard-shortcut first-keystroke="alt f1"/>
     </action>
 
@@ -612,8 +614,8 @@
         <keyboard-shortcut first-keystroke="meta k" second-keystroke="meta u"/>
     </action>
     <action id="Vcs.QuickListPopupAction">
-        <keyboard-shortcut first-keystroke="meta k" second-keystroke="y"/>
-        <keyboard-shortcut first-keystroke="meta k" second-keystroke="meta y"/>
+        <keyboard-shortcut first-keystroke="meta k" second-keystroke="0"/>
+        <keyboard-shortcut first-keystroke="meta k" second-keystroke="meta 0"/>
     </action>
 
     <!--meta+L (Line. Manipulations with code lines)-->
@@ -629,6 +631,10 @@
         <keyboard-shortcut first-keystroke="meta l" second-keystroke="d"/>
         <keyboard-shortcut first-keystroke="meta l" second-keystroke="meta d"/>
     </action>
+    <action id="ToggleBookmarkWithMnemonic">
+        <keyboard-shortcut first-keystroke="meta l" second-keystroke="f"/>
+        <keyboard-shortcut first-keystroke="meta l" second-keystroke="meta f"/>
+    </action>
     <action id="GotoLine">
         <keyboard-shortcut first-keystroke="meta l" second-keystroke="g"/>
         <keyboard-shortcut first-keystroke="meta l" second-keystroke="meta g"/>
@@ -640,10 +646,6 @@
     <action id="EditorJoinLines">
         <keyboard-shortcut first-keystroke="meta l" second-keystroke="j"/>
         <keyboard-shortcut first-keystroke="meta l" second-keystroke="meta j"/>
-    </action>
-    <action id="ToggleBookmarkWithMnemonic">
-        <keyboard-shortcut first-keystroke="meta l" second-keystroke="m"/>
-        <keyboard-shortcut first-keystroke="meta l" second-keystroke="meta m"/>
     </action>
     <action id="EditorToggleShowLineNumbers">
         <keyboard-shortcut first-keystroke="meta l" second-keystroke="n"/>
@@ -692,6 +694,10 @@
         <keyboard-shortcut first-keystroke="meta n" second-keystroke="meta i"/>
         <mouse-shortcut keystroke="control alt button1"/>
     </action>
+    <action id="FileStructurePopup">
+        <keyboard-shortcut first-keystroke="meta n" second-keystroke="j"/>
+        <keyboard-shortcut first-keystroke="meta n" second-keystroke="meta j"/>
+    </action>
     <action id="ReSharperGotoImplementation">
         <keyboard-shortcut first-keystroke="meta n" second-keystroke="k"/>
         <keyboard-shortcut first-keystroke="meta n" second-keystroke="meta k"/>
@@ -699,10 +705,6 @@
     <action id="ShowUsages">
         <keyboard-shortcut first-keystroke="meta n" second-keystroke="l"/>
         <keyboard-shortcut first-keystroke="meta n" second-keystroke="meta l"/>
-    </action>
-    <action id="FileStructurePopup">
-        <keyboard-shortcut first-keystroke="meta n" second-keystroke="m"/>
-        <keyboard-shortcut first-keystroke="meta n" second-keystroke="meta m"/>
     </action>
     <action id="ReSharperNavigateTo">
         <keyboard-shortcut first-keystroke="meta n" second-keystroke="n"/>
@@ -741,13 +743,13 @@
         <keyboard-shortcut first-keystroke="meta n" second-keystroke="x"/>
         <keyboard-shortcut first-keystroke="meta n" second-keystroke="meta x"/>
     </action>
-    <action id="SearchEverywhere">
-        <keyboard-shortcut first-keystroke="meta n" second-keystroke="y"/>
-        <keyboard-shortcut first-keystroke="meta n" second-keystroke="meta y"/>
-    </action>
     <action id="RecentChanges">
         <keyboard-shortcut first-keystroke="meta n" second-keystroke="z"/>
         <keyboard-shortcut first-keystroke="meta n" second-keystroke="meta z"/>
+    </action>
+    <action id="SearchEverywhere">
+        <keyboard-shortcut first-keystroke="meta n" second-keystroke="0"/>
+        <keyboard-shortcut first-keystroke="meta n" second-keystroke="meta 0"/>
     </action>
 
     <!--meta+O (Other. IDE- and plugin-specific actions)-->
@@ -789,10 +791,6 @@
         <keyboard-shortcut first-keystroke="meta p" second-keystroke="c"/>
         <keyboard-shortcut first-keystroke="meta p" second-keystroke="meta c"/>
     </action>
-    <action id="CWMHostShowPopupAction">
-        <keyboard-shortcut first-keystroke="meta p" second-keystroke="m"/>
-        <keyboard-shortcut first-keystroke="meta p" second-keystroke="meta m"/>
-    </action>
     <action id="RiderNuGetQuickListPopupAction">
         <keyboard-shortcut first-keystroke="meta p" second-keystroke="n"/>
         <keyboard-shortcut first-keystroke="meta p" second-keystroke="meta n"/>
@@ -825,6 +823,10 @@
         <keyboard-shortcut first-keystroke="meta p" second-keystroke="u"/>
         <keyboard-shortcut first-keystroke="meta p" second-keystroke="meta u"/>
     </action>
+    <action id="CWMHostShowPopupAction">
+        <keyboard-shortcut first-keystroke="meta p" second-keystroke="w"/>
+        <keyboard-shortcut first-keystroke="meta p" second-keystroke="meta w"/>
+    </action>
     <action id="CancelBuildAction">
         <keyboard-shortcut first-keystroke="meta p" second-keystroke="x"/>
         <keyboard-shortcut first-keystroke="meta p" second-keystroke="meta x"/>
@@ -847,7 +849,7 @@
         <keyboard-shortcut first-keystroke="meta r" second-keystroke="d"/>
         <keyboard-shortcut first-keystroke="meta r" second-keystroke="meta d"/>
     </action>
-    <action id="MembersPullUp">
+    <action id="ExtractMethod">
         <keyboard-shortcut first-keystroke="meta r" second-keystroke="e"/>
         <keyboard-shortcut first-keystroke="meta r" second-keystroke="meta e"/>
     </action>
@@ -855,9 +857,9 @@
         <keyboard-shortcut first-keystroke="meta r" second-keystroke="f"/>
         <keyboard-shortcut first-keystroke="meta r" second-keystroke="meta f"/>
     </action>
-    <action id="MemberPushDown">
-        <keyboard-shortcut first-keystroke="meta r" second-keystroke="h"/>
-        <keyboard-shortcut first-keystroke="meta r" second-keystroke="meta h"/>
+    <action id="SilentCodeCleanup">
+        <keyboard-shortcut first-keystroke="meta r" second-keystroke="g"/>
+        <keyboard-shortcut first-keystroke="meta r" second-keystroke="meta g"/>
     </action>
     <action id="ExtractInterface">
         <keyboard-shortcut first-keystroke="meta r" second-keystroke="i"/>
@@ -871,10 +873,6 @@
         <keyboard-shortcut first-keystroke="meta r" second-keystroke="l"/>
         <keyboard-shortcut first-keystroke="meta r" second-keystroke="meta l"/>
     </action>
-    <action id="ExtractMethod">
-        <keyboard-shortcut first-keystroke="meta r" second-keystroke="m"/>
-        <keyboard-shortcut first-keystroke="meta r" second-keystroke="meta m"/>
-    </action>
     <action id="OptimizeImports">
         <keyboard-shortcut first-keystroke="meta r" second-keystroke="o"/>
         <keyboard-shortcut first-keystroke="meta r" second-keystroke="meta o"/>
@@ -882,10 +880,6 @@
     <action id="IntroduceParameter">
         <keyboard-shortcut first-keystroke="meta r" second-keystroke="p"/>
         <keyboard-shortcut first-keystroke="meta r" second-keystroke="meta p"/>
-    </action>
-    <action id="SilentCodeCleanup">
-        <keyboard-shortcut first-keystroke="meta r" second-keystroke="q"/>
-        <keyboard-shortcut first-keystroke="meta r" second-keystroke="meta q"/>
     </action>
     <action id="RenameElement">
         <keyboard-shortcut first-keystroke="meta r" second-keystroke="r"/>
@@ -916,9 +910,17 @@
         <keyboard-shortcut first-keystroke="meta r" second-keystroke="meta x"/>
         <keyboard-shortcut first-keystroke="alt delete"/>
     </action>
-    <action id="Refactorings.QuickListPopupAction">
+    <action id="MembersPullUp">
         <keyboard-shortcut first-keystroke="meta r" second-keystroke="y"/>
         <keyboard-shortcut first-keystroke="meta r" second-keystroke="meta y"/>
+    </action>
+    <action id="MemberPushDown">
+        <keyboard-shortcut first-keystroke="meta r" second-keystroke="z"/>
+        <keyboard-shortcut first-keystroke="meta r" second-keystroke="meta z"/>
+    </action>
+    <action id="Refactorings.QuickListPopupAction">
+        <keyboard-shortcut first-keystroke="meta r" second-keystroke="0"/>
+        <keyboard-shortcut first-keystroke="meta r" second-keystroke="meta 0"/>
     </action>
 
     <!--meta+T (Test. Product-specific testing features)-->
@@ -983,8 +985,8 @@
         <keyboard-shortcut first-keystroke="meta t" second-keystroke="meta x"/>
     </action>
     <action id="RiderUnitTestQuickListPopupAction">
-        <keyboard-shortcut first-keystroke="meta t" second-keystroke="y"/>
-        <keyboard-shortcut first-keystroke="meta t" second-keystroke="meta y"/>
+        <keyboard-shortcut first-keystroke="meta t" second-keystroke="0"/>
+        <keyboard-shortcut first-keystroke="meta t" second-keystroke="meta 0"/>
     </action>
 
     <!--meta+U (Utilities)-->
@@ -996,9 +998,17 @@
         <keyboard-shortcut first-keystroke="meta u" second-keystroke="b"/>
         <keyboard-shortcut first-keystroke="meta u" second-keystroke="meta b"/>
     </action>
+    <action id="LocalHistory">
+        <keyboard-shortcut first-keystroke="meta e" second-keystroke="c"/>
+        <keyboard-shortcut first-keystroke="meta e" second-keystroke="meta c"/>
+    </action>
     <action id="ContextHelp">
-        <keyboard-shortcut first-keystroke="meta u" second-keystroke="h"/>
-        <keyboard-shortcut first-keystroke="meta u" second-keystroke="meta h"/>
+        <keyboard-shortcut first-keystroke="meta u" second-keystroke="d"/>
+        <keyboard-shortcut first-keystroke="meta u" second-keystroke="meta d"/>
+    </action>
+    <action id="HelpTopics">
+        <keyboard-shortcut first-keystroke="meta u" second-keystroke="g"/>
+        <keyboard-shortcut first-keystroke="meta u" second-keystroke="meta g"/>
     </action>
     <action id="context.save">
         <keyboard-shortcut first-keystroke="meta u" second-keystroke="k"/>
@@ -1036,10 +1046,6 @@
     <action id="context.clear">
         <keyboard-shortcut first-keystroke="meta u" second-keystroke="x"/>
         <keyboard-shortcut first-keystroke="meta u" second-keystroke="meta x"/>
-    </action>
-    <action id="HelpTopics">
-        <keyboard-shortcut first-keystroke="meta u" second-keystroke="y"/>
-        <keyboard-shortcut first-keystroke="meta u" second-keystroke="meta y"/>
     </action>
     <action id="tasks.close">
         <keyboard-shortcut first-keystroke="meta u" second-keystroke="z"/>
@@ -1079,10 +1085,6 @@
         <keyboard-shortcut first-keystroke="meta w" second-keystroke="g"/>
         <keyboard-shortcut first-keystroke="meta w" second-keystroke="meta g"/>
     </action>
-    <action id="ActivateHierarchyToolWindow">
-        <keyboard-shortcut first-keystroke="meta w" second-keystroke="h"/>
-        <keyboard-shortcut first-keystroke="meta w" second-keystroke="meta h"/>
-    </action>
     <action id="ActivateILViewerToolWindow">
         <keyboard-shortcut first-keystroke="meta w" second-keystroke="i"/>
         <keyboard-shortcut first-keystroke="meta w" second-keystroke="meta i"/>
@@ -1099,10 +1101,6 @@
         <keyboard-shortcut first-keystroke="meta w" second-keystroke="l"/>
         <keyboard-shortcut first-keystroke="meta w" second-keystroke="meta l"/>
     </action>
-    <action id="ActivateProfilerToolWindow">
-        <keyboard-shortcut first-keystroke="meta w" second-keystroke="m"/>
-        <keyboard-shortcut first-keystroke="meta w" second-keystroke="meta m"/>
-    </action>
     <action id="ActivateEventLogToolWindow">
         <keyboard-shortcut first-keystroke="meta w" second-keystroke="n"/>
         <keyboard-shortcut first-keystroke="meta w" second-keystroke="meta n"/>
@@ -1111,17 +1109,13 @@
         <keyboard-shortcut first-keystroke="meta w" second-keystroke="n"/>
         <keyboard-shortcut first-keystroke="meta w" second-keystroke="meta n"/>
     </action>
-    <action id="MaximizeToolWindow">
+    <action id="ActivateProfilerToolWindow">
         <keyboard-shortcut first-keystroke="meta w" second-keystroke="o"/>
         <keyboard-shortcut first-keystroke="meta w" second-keystroke="meta o"/>
     </action>
     <action id="ActivateProjectToolWindow">
         <keyboard-shortcut first-keystroke="meta w" second-keystroke="p"/>
         <keyboard-shortcut first-keystroke="meta w" second-keystroke="meta p"/>
-    </action>
-    <action id="ActivateDatabaseToolWindow">
-        <keyboard-shortcut first-keystroke="meta w" second-keystroke="q"/>
-        <keyboard-shortcut first-keystroke="meta w" second-keystroke="meta q"/>
     </action>
     <action id="ActivateRunToolWindow">
         <keyboard-shortcut first-keystroke="meta w" second-keystroke="r"/>
@@ -1144,20 +1138,15 @@
         <keyboard-shortcut first-keystroke="meta w" second-keystroke="v"/>
         <keyboard-shortcut first-keystroke="meta w" second-keystroke="meta v"/>
     </action>
-    <action id="HideAllWindows">
-        <keyboard-shortcut first-keystroke="meta w" second-keystroke="w"/>
-        <keyboard-shortcut first-keystroke="meta w" second-keystroke="meta w"/>
-    </action>
-    <action id="HideActiveWindow">
+    <action id="ActivateDatabaseToolWindow">
         <keyboard-shortcut first-keystroke="meta w" second-keystroke="x"/>
         <keyboard-shortcut first-keystroke="meta w" second-keystroke="meta x"/>
-        <keyboard-shortcut first-keystroke="shift escape"/>
     </action>
     <action id="ActivateTODOToolWindow">
         <keyboard-shortcut first-keystroke="meta w" second-keystroke="y"/>
         <keyboard-shortcut first-keystroke="meta w" second-keystroke="meta y"/>
     </action>
-    <action id="JumpToLastWindow">
+    <action id="ActivateHierarchyToolWindow">
         <keyboard-shortcut first-keystroke="meta w" second-keystroke="z"/>
         <keyboard-shortcut first-keystroke="meta w" second-keystroke="meta z"/>
     </action>
@@ -1176,6 +1165,23 @@
     <action id="ToggleZenMode">
         <keyboard-shortcut first-keystroke="meta w" second-keystroke="4"/>
         <keyboard-shortcut first-keystroke="meta w" second-keystroke="meta 4"/>
+    </action>
+    <action id="HideActiveWindow">
+        <keyboard-shortcut first-keystroke="meta w" second-keystroke="5"/>
+        <keyboard-shortcut first-keystroke="meta w" second-keystroke="meta 5"/>
+        <keyboard-shortcut first-keystroke="shift escape"/>
+    </action>
+    <action id="HideAllWindows">
+        <keyboard-shortcut first-keystroke="meta w" second-keystroke="6"/>
+        <keyboard-shortcut first-keystroke="meta w" second-keystroke="meta 6"/>
+    </action>
+    <action id="MaximizeToolWindow">
+        <keyboard-shortcut first-keystroke="meta w" second-keystroke="9"/>
+        <keyboard-shortcut first-keystroke="meta w" second-keystroke="meta 9"/>
+    </action>
+    <action id="JumpToLastWindow">
+        <keyboard-shortcut first-keystroke="meta w" second-keystroke="0"/>
+        <keyboard-shortcut first-keystroke="meta w" second-keystroke="meta 0"/>
     </action>
 
     <action id="com.jetbrains.rider.interactive.csi.SendToCSharpInteractive"/>
